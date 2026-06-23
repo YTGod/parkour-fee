@@ -55,7 +55,7 @@ tr:last-child td{border-bottom:none}
   <div class="footer">資料僅供內部討論參考</div>
 </div>
 <script>
-const HOUSING=60000,STAY=23,INS=5400,MED=3000,SUB=20000;
+const HOUSING=60000,STAY=23,INS=3942,MED=3000,SUB=20000;
 const pStay=HOUSING/STAY;
 const perYouth=SUB/16;
 
@@ -146,7 +146,7 @@ function render(){
   document.getElementById('ftable').innerHTML=html;
 
   const items=[];
-  if(p.m) items.push(`魔猴 $${fmt(p.m)}`);
+  if(p.m) items.push(`摩猴 $${fmt(p.m)}`);
   if(p.ph) items.push(`攝影 $${fmt(p.ph)}`);
   items.push(`講座 $${fmt(p.l)}`);
   items.push(`保險 $${fmt(INS)}`);
