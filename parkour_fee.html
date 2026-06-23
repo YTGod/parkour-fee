@@ -3,49 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>大專院校跑酷聯合大交流｜報名費試算</title>
+<title>全國大專院校跑酷青年城市交流營｜報名費試算</title>
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Noto Sans TC',sans-serif;background:#f5f4f0;color:#1a1a1a;min-height:100vh;padding:2rem 1rem}
-  .container{max-width:680px;margin:0 auto}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Noto Sans TC',sans-serif;background:#f5f4f0;color:#1a1a1a;min-height:100vh;padding:1.5rem 1rem}
+.container{max-width:680px;margin:0 auto}
 
-  .hero{text-align:center;margin-bottom:2rem}
-  .hero .tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#888;background:#e8e6e0;padding:4px 12px;border-radius:20px;margin-bottom:.75rem}
-  .hero h1{font-size:22px;font-weight:600;letter-spacing:-.02em;line-height:1.3;margin-bottom:.4rem}
-  .hero .sub{font-size:13px;color:#666}
+.hero{text-align:center;margin-bottom:1.5rem}
+.hero .tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#888;background:#e8e6e0;padding:4px 12px;border-radius:20px;margin-bottom:.6rem}
+.hero h1{font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.3;margin-bottom:.3rem}
+.hero .sub{font-size:12px;color:#888;line-height:1.6}
 
-  .plan-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1rem}
-  .plan-btn{padding:6px 14px;border:1.5px solid #ddd;border-radius:20px;background:#fff;color:#555;cursor:pointer;font-size:13px;font-family:inherit;transition:all .15s}
-  .plan-btn:hover{border-color:#aaa;color:#1a1a1a}
-  .plan-btn.active{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
+.plan-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:.75rem}
+.plan-btn{padding:6px 13px;border:1.5px solid #ddd;border-radius:20px;background:#fff;color:#555;cursor:pointer;font-size:13px;font-family:inherit;transition:all .15s}
+.plan-btn.active{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
 
-  .plan-desc{font-size:12px;color:#888;margin-bottom:1.25rem;padding:5px 0}
+.plan-desc{font-size:12px;color:#888;margin-bottom:1.1rem}
 
-  .metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:1.5rem}
-  @media(min-width:480px){.metrics{grid-template-columns:repeat(4,1fr)}}
-  .metric{background:#fff;border:1px solid #e8e6e0;border-radius:10px;padding:.75rem 1rem}
-  .metric .lbl{font-size:11px;color:#999;margin-bottom:4px}
-  .metric .val{font-size:18px;font-weight:600;letter-spacing:-.02em}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1.25rem}
+@media(min-width:480px){.metrics{grid-template-columns:repeat(4,1fr)}}
+.metric{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:.85rem 1rem}
+.metric .lbl{font-size:11px;color:#999;margin-bottom:4px}
+.metric .val{font-size:20px;font-weight:600;letter-spacing:-.02em}
 
-  .card{background:#fff;border:1px solid #e8e6e0;border-radius:12px;overflow:hidden;margin-bottom:1rem}
-  .card-head{padding:.75rem 1rem;border-bottom:1px solid #f0ede8;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#999}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;border:1px solid #e8e6e0;background:#fff;margin-bottom:1rem}
+.scroll-hint{font-size:11px;color:#bbb;text-align:right;margin-bottom:.3rem;padding-right:.25rem}
 
-  table{width:100%;border-collapse:collapse;font-size:13px}
-  th{text-align:left;font-size:11px;color:#999;font-weight:500;padding:10px 16px;border-bottom:1px solid #f0ede8;white-space:nowrap}
-  td{padding:12px 16px;border-bottom:1px solid #f5f4f0;vertical-align:middle}
-  tr:last-child td{border-bottom:none}
-  .total-row td{background:#f9f8f5;font-weight:600}
+table{width:100%;min-width:480px;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-weight:500;font-size:11px;color:#999;padding:10px 14px;border-bottom:1px solid #f0ede8;white-space:nowrap}
+td{padding:12px 14px;border-bottom:1px solid #f5f4f0;vertical-align:middle;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+.total-row td{background:#f9f8f5;font-weight:600}
 
-  .id-label{font-weight:500}
-  .cnt{color:#999;font-size:12px}
-  .dash{color:#ccc}
-  .sub-tag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;background:#f0f7f0;color:#3a7a3a;margin-left:4px;vertical-align:middle;white-space:nowrap}
-  .fee-amt{font-weight:600;font-size:15px;letter-spacing:-.01em}
-  .fee-free{font-weight:600;font-size:15px;color:#3a7a3a}
+.id-label{font-weight:500}
+.sub-tag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;background:#f0f7f0;color:#3a7a3a;margin-left:4px;vertical-align:middle}
+.fee-amt{font-weight:600;font-size:15px}
+.fee-free{font-weight:600;font-size:15px;color:#3a7a3a}
+.dash{color:#ccc}
 
-  .note{font-size:12px;color:#999;line-height:1.7;padding:1rem;border-top:1px solid #f0ede8}
-
-  .footer{text-align:center;font-size:11px;color:#bbb;margin-top:1.5rem;padding-top:1rem}
+.note{font-size:11px;color:#aaa;line-height:1.7;padding:.75rem 1rem;background:#fff;border:1px solid #e8e6e0;border-radius:12px}
+.footer{text-align:center;font-size:11px;color:#ccc;margin-top:1.25rem}
 </style>
 </head>
 <body>
@@ -53,22 +50,20 @@
 
   <div class="hero">
     <div class="tag">費用試算</div>
-    <h1>大專院校跑酷聯合大交流</h1>
-    <p class="sub">高雄市青年局補助 $20,000 ｜ 參與人數 27 人 ｜ 住宿 23 人</p>
+    <h1>全國大專院校跑酷青年城市交流營</h1>
+    <p class="sub">高雄市青年局補助 $20,000 · 參與 27 人 · 住宿 23 人</p>
   </div>
 
   <div class="plan-tabs" id="tabs"></div>
   <div class="plan-desc" id="desc"></div>
-
   <div class="metrics" id="metrics"></div>
 
-  <div class="card">
-    <div class="card-head">各身分報名費</div>
+  <div class="scroll-hint" id="hint"></div>
+  <div class="table-wrap">
     <table id="ftable"></table>
-    <div class="note" id="note"></div>
   </div>
-
-  <div class="footer">資料僅供內部討論參考 · 製於 2025</div>
+  <div class="note" id="note"></div>
+  <div class="footer">資料僅供內部討論參考</div>
 </div>
 
 <script>
@@ -93,14 +88,23 @@ const groups=[
 let cur=0;
 function fmt(n){return Math.round(n).toLocaleString('zh-TW');}
 
+function checkScroll(){
+  const tw=document.querySelector('.table-wrap');
+  const hint=document.getElementById('hint');
+  if(tw.scrollWidth>tw.clientWidth){
+    hint.textContent='← 左右滑動可查看完整內容 →';
+  } else {
+    hint.textContent='';
+  }
+}
+
 function render(){
   const p=plans[cur];
   const shared=p.l+INS+MED+p.m+p.ph;
   const perCap=shared/27;
   const totalExp=HOUSING+shared;
   const selfFund=totalExp-SUB;
-  const noStayCost=perCap;
-  const remSub=SUB-noStayCost;
+  const remSub=SUB-perCap;
   const stayYouthSub=remSub/15;
 
   document.getElementById('desc').textContent=p.d;
@@ -123,7 +127,7 @@ function render(){
     '<th>人數</th>'+
     '<th>住宿費</th>'+
     '<th>公攤</th>'+
-    '<th>補助</th>'+
+    '<th>大專補助</th>'+
     '<th>實繳</th>'+
     '</tr></thead><tbody>';
 
@@ -134,7 +138,8 @@ function render(){
     const h=g.stay?`$${fmt(pStay)}`:'<span class="dash">—</span>';
     let s='<span class="dash">—</span>';
     if(g.youth){
-      s=g.stay?`−$${fmt(stayYouthSub)}`:'抵公攤';
+      const sAmt=g.stay?stayYouthSub:perCap;
+      s=`−$${fmt(sAmt)}`;
     }
     const fc=fee===0
       ?'<span class="fee-free">免費</span>'
@@ -142,7 +147,7 @@ function render(){
     const subTag=g.youth?'<span class="sub-tag">大專補助</span>':'';
     html+=`<tr>`+
       `<td><span class="id-label">${g.lb}</span>${subTag}</td>`+
-      `<td><span class="cnt">${g.cnt} 人</span></td>`+
+      `<td>${g.cnt} 人</td>`+
       `<td>${h}</td>`+
       `<td>$${fmt(perCap)}</td>`+
       `<td>${s}</td>`+
@@ -153,17 +158,18 @@ function render(){
   document.getElementById('ftable').innerHTML=html;
 
   const items=[];
-  if(p.m) items.push(`魔猴包場 $${fmt(p.m)}`);
+  if(p.m) items.push(`魔猴 $${fmt(p.m)}`);
   if(p.ph) items.push(`攝影 $${fmt(p.ph)}`);
   items.push(`講座 $${fmt(p.l)}`);
   items.push(`保險 $${fmt(INS)}`);
   items.push(`醫護 $${fmt(MED)}`);
 
   document.getElementById('note').textContent=
-    `公攤費用：${items.join('＋')} ＝ $${fmt(shared)} ÷ 27人 ＝ $${fmt(perCap)}/人。`+
-    `住宿費 $60,000 ÷ 23人 ＝ $${fmt(pStay)}/人。`+
-    `大專補助 $20,000，不住宿大專生公攤 $${fmt(noStayCost)} 優先抵扣，`+
-    `剩餘 $${fmt(remSub)} ÷ 15位住宿大專生 ＝ $${fmt(stayYouthSub)}/人。`;
+    `公攤：${items.join(' + ')} = $${fmt(shared)} ÷ 27人 = $${fmt(perCap)}/人。`+
+    `住宿費 $60,000 ÷ 23人 = $${fmt(pStay)}/人。`+
+    `不住宿大專生公攤 $${fmt(perCap)} 優先抵扣，剩餘 $${fmt(remSub)} ÷ 15人 = $${fmt(stayYouthSub)} 補助住宿大專生。`;
+
+  setTimeout(checkScroll,50);
 }
 
 const tabBar=document.getElementById('tabs');
@@ -178,7 +184,9 @@ plans.forEach((p,i)=>{
   };
   tabBar.appendChild(b);
 });
+
 render();
+window.addEventListener('resize',checkScroll);
 </script>
 </body>
 </html>
